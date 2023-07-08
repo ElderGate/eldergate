@@ -4,7 +4,7 @@
 	<title>Titre de la page</title>
 	<style type="text/css">
 		body {
-			background-color: white;
+			background-color: #36393f;
 			font-family: Arial, sans-serif;
 			font-size: 16px;
 			color: black;
@@ -25,6 +25,10 @@
 			font-size: 24px;
 			font-weight: normal;
 		}
+        header h1 a {
+            color: white;
+            text-decoration: none;
+        }
 		header nav {
 			margin-left: auto;
 		}
@@ -83,12 +87,15 @@
             font-size:16px; 
             color:white
         }
+        @media (max-width: 600px) {
+          /* ajouter ici les styles pour les écrans de moins de 600px */
+        }
     </style>
 </head>
 <body>
 <header>
     <img src="https://cdn.discordapp.com/icons/1115915507619594314/365e69aca976311ba71ae1377ee68ce1.webp?size=2048" alt="Logo du serveur">
-    <h1>ElderGateRP</h1>
+    <h1><a href="https://discord.gg/TxftHuVhJt">ElderGateRP</a></h1>
     <nav>
         <ul>
             <li><a href="index.html">Accueil</a></li>
@@ -110,5 +117,3 @@
 
 </body>
 </html>
-
-
