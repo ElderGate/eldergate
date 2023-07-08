@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Titre de la page</title>
+	<title>FRA - ElderGateRP</title>
 	<style type="text/css">
 		body {
 			background-color: #36393f;
@@ -87,6 +87,9 @@
             font-size:16px; 
             color:white
         }
+        .definition {
+          display:none
+        }
         @media (max-width: 600px) {
           /* ajouter ici les styles pour les écrans de moins de 600px */
         }
@@ -106,7 +109,8 @@
 <div class="notionsrp">
     <h2>Notions RP</h2>
     <ul>
-        <li><strong>FearRP:</strong> Définition de FearRP.</li>
+        <li><strong id="fearRP">FearRP:</strong> Définition de FearRP.</li>
+        <li class="definition">Il s'agit de simuler la peur.</li>
         <li><strong>PainRP:</strong> Définition de PainRP.</li>
         <li><strong>FreeKill:</strong> Définition de FreeKill.</li>
         <li><strong>FreePunch:</strong> Définition de FreePunch.</li>
@@ -114,6 +118,17 @@
         <li><strong>MassRP:</strong> Définition de MassRP.</li>
     </ul>
 </div>
+
+<script type="text/javascript">
+    document.getElementById("fearRP").addEventListener("click", function() {
+      var definition = document.querySelector(".definition");
+      if (definition.style.display === "none") {
+        definition.style.display = "block";
+      } else {
+        definition.style.display = "none";
+      }
+    });
+</script>
 
 </body>
 </html>
